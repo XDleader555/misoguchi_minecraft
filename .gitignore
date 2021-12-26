@@ -1,0 +1,53 @@
+# Paper server configs
+versions/
+logs/
+libraries/
+cache/
+backups/
+eula.txt
+paper*.jar
+usercache.json
+version_history.json
+.console_history
+
+# Worlds
+world/
+world_nether/
+world_the_end/
+
+# Plugin jars
+plugins/*.jar
+plugins/bStats/
+
+# AngelChest
+plugins/AngelChest/discord-verification.html
+plugins/AngelChest/angelchests/
+plugins/AngelChest/logs/
+
+# CommandBook
+plugins/CommandBook/homes.csv
+plugins/CommandBook/bans*.log
+plugins/CommandBook/warps.csv
+plugins/CommandBook/spawns.yml
+plugins/CommandBook/sessions/
+
+# Craftbook
+plugins/Craftbook/uuid-mappings.db
+
+# LuckPerms
+plugins/LuckPerms/libs/
+plugins/LuckPerms/translations
+plugins/LuckPerms/*.db
+
+# Multiverse
+plugins/Multiverse-Inventories/players
+
+# OreAnnouncer
+plugins/OreAnnouncer/libraries/
+plugins/OreAnnouncer/database.mv.db
+
+# WorldEdit
+plugins/WorldEdit/.archive-unpack/
+
+# WorldGuard
+plugins/WorldGuard/cache/
