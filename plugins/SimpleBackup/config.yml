@@ -60,14 +60,14 @@
 # start-time: '03:00'
 # #
 
-backup-interval-hours: 1.0
+backup-interval-hours: 3
 backup-file: backups/
 backup-date-format: yyyy-MM-dd-HH-mm-ss
 backup-empty-server: false
 disable-zipping: false
 broadcast-message: true
 backup-message: '[SimpleBackup]'
-custom-backup-message: Backup starting
+custom-backup-message: Backup started
 custom-backup-message-end: Backup completed
 backup-completed-hook: ''
 delete-schedule:
@@ -77,7 +77,7 @@ delete-schedule:
   - 4w
   - 30w
   interval-frequencies:
-  - 4h
+  - 6h
   - 1d
   - 5d
   - 30d

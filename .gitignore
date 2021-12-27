@@ -41,6 +41,7 @@ plugins/LuckPerms/*.db
 
 # Multiverse
 plugins/Multiverse-Inventories/players
+plugins/Multiverse-Inventories/groups
 
 # OreAnnouncer
 plugins/OreAnnouncer/libraries/
@@ -51,3 +52,11 @@ plugins/WorldEdit/.archive-unpack/
 
 # WorldGuard
 plugins/WorldGuard/cache/
+
+# TAB
+plugins/TAB/errors.log
+plugins/PlaceholderAPI/expansions/
+
+# Gringotts
+plugins/Gringotts/Gringotts.db
+plugins/Gringotts/Gringotts.db.*

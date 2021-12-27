@@ -32,22 +32,6 @@
 #  tnt: true/false                | Handle destroy with TNT
 #  priority: #                    | Priority number (-1 to disable) default 0
 blocks:
-  EMERALD_ORE:
-    enabled: true
-    variants:
-      - DEEPSLATE_EMERALD_ORE
-    display-name: "Emerald Ore"
-    display-color: "green"
-    alerts:
-      user: true
-      admin: true
-    name:
-      singular: emerald
-      plural: emeralds
-    sound: ENTITY_PLAYER_LEVELUP
-    light-level: 15
-    count-on-destroy: true
-    priority: 100
   DIAMOND_ORE:
     enabled: true
     variants:
@@ -67,95 +51,6 @@ blocks:
     light-level: 15
     count-on-destroy: true
     priority: 90
-  GOLD_ORE:
-    enabled: true
-    variants:
-      - DEEPSLATE_GOLD_ORE
-    display-name: "Gold Ore"
-    display-color: "gold"
-    alerts:
-      user: false
-      admin: false
-    name:
-      singular: gold
-      plural: golds
-    count:
-      number: 30
-      time: 600
-    light-level: 15
-    count-on-destroy: false
-    priority: 80
-  REDSTONE_ORE:
-    enabled: false
-    variants:
-      - DEEPSLATE_REDSTONE_ORE
-    display-name: "Redstone Ore"
-    display-color: "red"
-    alerts:
-      user: true
-      admin: true
-    name:
-      singular: redstone
-      plural: redstones
-    light-level: 15
-    count-on-destroy: false
-    priority: -1
-  COPPER_ORE:
-    enabled: false
-    variants:
-      - DEEPSLATE_COPPER_ORE
-    display-name: "Copper Ore"
-    display-color: "dark_aqua"
-    alerts:
-      user: false
-      admin: false
-    name:
-      singular: copper
-      plural: coppers
-    light-level: 15
-    count-on-destroy: false
-    priority: -1
-  IRON_ORE:
-    enabled: false
-    variants:
-      - DEEPSLATE_IRON_ORE
-    display-name: "Iron Ore"
-    display-color: "white"
-    alerts:
-      user: false
-      admin: false
-    name:
-      singular: iron
-      plural: irons
-    light-level: 15
-    count-on-destroy: false
-    priority: -1
-  NETHER_QUARTZ_ORE:
-    enabled: false
-    display-name: "Quartz Ore"
-    display-color: "dark_red"
-    alerts:
-      user: true
-      admin: true
-    name:
-      singular: quartz
-      plural: quartzes
-    light-level: 15
-    count-on-destroy: false
-    priority: 60
-  ANCIENT_DEBRIS:
-    enabled: false
-    display-name: "Ancient Debris"
-    display-color: "dark_red"
-    alerts:
-      user: true
-      admin: true
-    name:
-      singular: ancient debris
-      plural: ancient debris
-    light-level: 15
-    count-on-destroy: false
-    priority: 80
 
 dont-edit-this:
   version: 1

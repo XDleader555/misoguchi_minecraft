@@ -1,0 +1,2 @@
+# LuckPerms UUID lookup cache
+5de4d79e-0bf5-4a15-9edc-1d180dac5675:XDleader555

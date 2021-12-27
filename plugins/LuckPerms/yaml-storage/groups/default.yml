@@ -1,0 +1,54 @@
+name: default
+permissions:
+- angelchest.use
+- angelchest.fetch
+- commandbook.time.check
+- commandbook.away
+- commandbook.motd
+- commandbook.who
+- commandbook.spawn
+- commandbook.warp.list
+- commandbook.say
+- commandbook.say.me
+- commandbook.msg
+- commandbook.whereami
+- commandbook.whereami.compass
+- commandbook.ping
+- oreannouncer.user.*
+- craftbook.mech.headdrops.*
+- craftbook.mech.leads.mobs.*
+- craftbook.mech.chair.use
+- craftbook.mech.chunk
+- craftbook.mech.cook
+- craftbook.mech.cook.refuel
+- craftbook.mech.footprints.see
+- craftbook.mech.footprints.use
+- craftbook.mech.leads
+- craftbook.mech.leads.ignore-target
+- dynmap.marker.*
+- dynmap.fullrender
+- dynmap.reload
+- dynmap.render
+- luckperms.user.meta.removesuffix
+- luckperms.user.meta.setsuffix
+- simplebackup.use
+- simplesort.chest
+- simplesort.inventory
+- lpc.colorcodes
+- lpc.rgbcodes
+prefixes:
+- '&1[&7E&1]':
+    priority: 1
+    context:
+      world: world_the_end
+- '&1[&cN&1]':
+    priority: 1
+    context:
+      world: world_nether
+- '&1[&aW&1]':
+    priority: 1
+    context:
+      world: world
+suffixes:
+- '&1[&9Player&1]&f':
+    priority: 1

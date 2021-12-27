@@ -4,3 +4,5 @@
 enable-wand: true
 wand: STICK
 stack-all: false
+auto-sorting:
+  XDleader555: false

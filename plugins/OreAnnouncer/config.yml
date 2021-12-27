@@ -114,7 +114,7 @@ alerts:
   # Print the coordinates of the player on block destroy:
   # => %x%, %y% and %z%: Be sure to add them into messages/commands
   coordinates:
-    enable: true
+    enable: false
     # [Hide real coordinates]
     # Choose to hide/randomize the coordinates
     # => count:        How many coordinates to hide
@@ -175,7 +175,7 @@ blocks:
   # => bypass-secure-counter:   This is a kill-switch used to avoid server crash when
   #                               the server is trying to calculate nearest blocks. Do
   #                               not touch it if you don't know what you are doing
-  bypass-player-blocks: false
+  bypass-player-blocks: true
   bypass-silk-touch: false
   bypass-secure-counter: false
 
