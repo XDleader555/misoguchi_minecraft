@@ -9,16 +9,20 @@
 #
 ######################################################
 
-@server_name = '<Server Name>';
+@server_name = 'MisoguchiMC';
 
 # Echo out a server greeting to the console
 # console('Welcome to this server, which is running CommandHelper! (Change this message in plugins/CommandHelper/main.ms)');
 
 # Bind an event to the player join, and tell ops hello.
 # We send in @server_name, so we can use it inside the event handler
-#bind('player_join', null, null, @event, @server_name) {
-#	# If the player is an op, let's send them a welcome message
-#	if(pisop(@event['player'])) {
-#		msg('Welcome to '.@server_name.' (Change this message in plugins/CommandHelper/main.ms)');
-#	}
-#}
+bind('player_join', null, null, @event, @server_name) {
+	# Check if the player has build permissions
+	if(!has_permission($player, 'commandhelper.motd')) {
+		msg(color('DARK_RED').'==-------------------------------------------------==');
+		msg(color('PLAIN_WHITE').'Welcome '.color('GOLD').player());
+		msg(color('PLAIN_WHITE').'You are currently '.color('RED').color('BOLD').'NOT WHITELISTED');
+		msg(color('PLAIN_WHITE').'Your actions will be limited until you are whitelisted');
+		die(color('DARK_RED').'==-------------------------------------------------==');
+	}
+}

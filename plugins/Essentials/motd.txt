@@ -1,4 +1,6 @@
-&6Welcome, {PLAYER}&6!
-&6Type &c/help&6 for a list of commands.
-&6Type &c/list&6 to see who else is online.
-&6Players online:&c {ONLINE} &6- World time:&c {WORLDTIME12}
+&4==-------------------------------------------------==&f
+&rWelcome back &6{PLAYER}&r!
+&rIt is currently &6{WORLDTIME12}&r in &6{WORLD}
+&rCommand list is on our website &3&nhttps://misoguchi.com/
+&rJoin the &ddiscord! &3&nhttps://discord.gg/S22c4mb
+&4==-------------------------------------------------==&f

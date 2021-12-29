@@ -36,6 +36,9 @@ permissions:
 - essentials.afk
 - essentials.broadcast
 - essentials.build
+- essentials.clearinventory
+- essentials.list
+- essentials.motd
 - essentials.suicide
 - lpc.colorcodes
 - lpc.rgbcodes

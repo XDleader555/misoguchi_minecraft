@@ -2,15 +2,9 @@ name: default
 permissions:
 - bukkit.command.plugins:
     value: false
-- commandbook.motd
-- commandbook.msg
-- commandbook.say
-- commandbook.say.me
-- commandbook.spawn
 - craftbook.mech.chair.use
 - craftbook.mech.footprints.see
 - craftbook.mech.footprints.use
-- displayname.guest
 - essentials.afk.auto
 - lpc.colorcodes
 - lpc.rgbcodes
