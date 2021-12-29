@@ -14,15 +14,21 @@ version_history.json
 world/
 world_nether/
 world_the_end/
+lantern/
+lantern_nether/
+lantern_the_end/
+
 
 # Plugin jars
 plugins/*.jar
+plugins/*.bak
 plugins/bStats/
 
 # AngelChest
 plugins/AngelChest/discord-verification.html
 plugins/AngelChest/angelchests/
 plugins/AngelChest/logs/
+plugins/AngelChest/watchdog
 
 # CommandBook
 plugins/CommandBook/homes.csv
@@ -35,13 +41,17 @@ plugins/CommandBook/sessions/
 plugins/Craftbook/uuid-mappings.db
 
 # LuckPerms
+plugins/LuckPerms/yaml-storage/users/
+plugins/LuckPerms/yaml-storage/actions.txt
+plugins/LuckPerms/yaml-storage/uuidcache.txt
 plugins/LuckPerms/libs/
 plugins/LuckPerms/translations
 plugins/LuckPerms/*.db
 
 # Multiverse
-plugins/Multiverse-Inventories/players
-plugins/Multiverse-Inventories/groups
+plugins/Multiverse-Inventories/players/
+plugins/Multiverse-Inventories/groups/
+plugins/Multiverse-Inventories/worlds/
 
 # OreAnnouncer
 plugins/OreAnnouncer/libraries/
@@ -52,6 +62,7 @@ plugins/WorldEdit/.archive-unpack/
 
 # WorldGuard
 plugins/WorldGuard/cache/
+plugins/WorldGuard/worlds/
 
 # TAB
 plugins/TAB/errors.log
@@ -60,3 +71,16 @@ plugins/PlaceholderAPI/expansions/
 # Gringotts
 plugins/Gringotts/Gringotts.db
 plugins/Gringotts/Gringotts.db.*
+
+# CommandHelper
+plugins/CommandHelper/.cache/
+plugins/CommandHelper/logs/
+
+# Essentials
+plugins/Essentials/userdata/
+plugins/Essentials/userdata-npc-backup/
+plugins/Essentials/warps/
+plugins/Essentials/usermap.csv
+
+# ProtocolLib
+plugins/ProtocolLib/lastupdate

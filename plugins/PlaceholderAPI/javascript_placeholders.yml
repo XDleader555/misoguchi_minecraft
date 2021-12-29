@@ -21,5 +21,5 @@
 # 
 # 'my_placeholder':
 #   file: 'my_placeholder.js'
-get_speed:
-  file: get_speed.js
+example:
+  file: example.js

@@ -36,7 +36,7 @@ scoreboard-teams:
   invisible-nametags: false
   anti-override: true
   sorting-types:
-    - "GROUPS:admin,mod,service,default"
+    - "GROUPS:admin,mod,service,player,default,guest"
     - "PLACEHOLDER_A_TO_Z:%player%"
   case-sensitive-sorting: true
   disable-in-worlds:

@@ -1,54 +1,33 @@
 name: default
 permissions:
-- angelchest.use
-- angelchest.fetch
-- commandbook.time.check
-- commandbook.away
+- bukkit.command.plugins:
+    value: false
 - commandbook.motd
-- commandbook.who
-- commandbook.spawn
-- commandbook.warp.list
+- commandbook.msg
 - commandbook.say
 - commandbook.say.me
-- commandbook.msg
-- commandbook.whereami
-- commandbook.whereami.compass
-- commandbook.ping
-- oreannouncer.user.*
-- craftbook.mech.headdrops.*
-- craftbook.mech.leads.mobs.*
+- commandbook.spawn
 - craftbook.mech.chair.use
-- craftbook.mech.chunk
-- craftbook.mech.cook
-- craftbook.mech.cook.refuel
 - craftbook.mech.footprints.see
 - craftbook.mech.footprints.use
-- craftbook.mech.leads
-- craftbook.mech.leads.ignore-target
-- dynmap.marker.*
-- dynmap.fullrender
-- dynmap.reload
-- dynmap.render
-- luckperms.user.meta.removesuffix
-- luckperms.user.meta.setsuffix
-- simplebackup.use
-- simplesort.chest
-- simplesort.inventory
+- displayname.guest
+- essentials.afk.auto
 - lpc.colorcodes
 - lpc.rgbcodes
+- luckperms.log.notify
 prefixes:
-- '&1[&7E&1]':
+- "&3[&7LE&3\t]&f":
     priority: 1
     context:
-      world: world_the_end
-- '&1[&cN&1]':
+      world: lantern_the_end
+- '&3[&cLN&3]&f':
     priority: 1
     context:
-      world: world_nether
-- '&1[&aW&1]':
+      world: lantern_nether
+- '&3[&aLW&3]&f':
     priority: 1
     context:
-      world: world
+      world: lantern
 suffixes:
-- '&1[&9Player&1]&f':
+- '&f[Guest]&f':
     priority: 1

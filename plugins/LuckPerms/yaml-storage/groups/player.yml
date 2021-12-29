@@ -1,0 +1,70 @@
+name: player
+permissions:
+- craftbook.mech.leads.mobs.*
+- luckperms.user.promote.playertrack.*
+- craftbook.mech.headdrops.*
+- dynmap.marker.*
+- oreannouncer.user.*
+- worldguard.build.*
+- angelchest.fetch
+- angelchest.use
+- commandbook.away
+- commandbook.motd
+- commandbook.msg
+- commandbook.ping
+- commandbook.say
+- commandbook.say.me
+- commandbook.spawn
+- commandbook.time.check
+- commandbook.warp.list
+- commandbook.whereami
+- commandbook.whereami.compass
+- commandbook.who
+- commandhelper.alias.settitle
+- commandhelper.alias.whitelist
+- craftbook.mech.chair.use
+- craftbook.mech.chunk
+- craftbook.mech.cook
+- craftbook.mech.cook.refuel
+- craftbook.mech.footprints.see
+- craftbook.mech.footprints.use
+- craftbook.mech.leads
+- craftbook.mech.leads.ignore-target
+- dynmap.fullrender
+- dynmap.reload
+- dynmap.render
+- essentials.afk
+- essentials.broadcast
+- essentials.build
+- essentials.suicide
+- lpc.colorcodes
+- lpc.rgbcodes
+- luckperms.usecontext.global
+- luckperms.user.promote
+- luckperms.user.promote.modify.others
+- luckperms.user.promote.playertrack.{service}:
+    value: false
+- multiverse.core.info
+- multiverse.info
+- simplebackup.use
+- simplesort.chest
+- simplesort.inventory
+- worldedit.navigation.unstuck
+parents:
+- default
+prefixes:
+- '&1[&7E&1]':
+    priority: 1
+    context:
+      world: world_the_end
+- '&1[&cN&1]':
+    priority: 1
+    context:
+      world: world_nether
+- '&1[&aW&1]':
+    priority: 1
+    context:
+      world: world
+suffixes:
+- '&1[&9Player&1]&f':
+    priority: 1

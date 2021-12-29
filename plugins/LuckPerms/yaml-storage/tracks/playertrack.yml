@@ -1,0 +1,4 @@
+name: playertrack
+groups:
+- default
+- player

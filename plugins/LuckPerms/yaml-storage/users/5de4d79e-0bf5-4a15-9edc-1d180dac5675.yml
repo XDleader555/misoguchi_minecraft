@@ -1,5 +1,10 @@
 uuid: 5de4d79e-0bf5-4a15-9edc-1d180dac5675
 name: XDleader555
-primary-group: service
+primary-group: player
+permissions:
+- luckperms.log.notify.ignoring
 parents:
-- service
+- player
+suffixes:
+- '&1[&9Player&1]&f':
+    priority: 2

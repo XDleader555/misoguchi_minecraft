@@ -5,4 +5,4 @@ BINDIR=$(dirname "$(readlink -fn "$0")")
 cd "$BINDIR"
 
 # run the server
-java -Xms1G -Xmx3G -XX:+UseLargePages -jar paper.jar -nogui
+java -Xms1G -Xmx6G -jar paper-1.18.1-101.jar -nogui

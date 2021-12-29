@@ -5,7 +5,10 @@ permissions:
 - commandbook.more.*
 - commandbook.teleport.*
 - commandbook.warp.*
+- oreannouncer.admin.*
 - luckperms.*
+- placeholderapi.*
+- angelchest.reload
 - commandbook.bans.ban
 - commandbook.bans.baninfo
 - commandbook.bans.isbanned
@@ -47,8 +50,8 @@ permissions:
 - commandbook.weather
 - commandbook.weather.thunder
 - lpc.reload
-- oreannouncer.admin.*
-- angelchest.reload
-- placeholderapi.*
+- multiverse.core.remove
+- multiverse.core.spawn.set
+- worldedit.butcher
 parents:
-- default
+- player

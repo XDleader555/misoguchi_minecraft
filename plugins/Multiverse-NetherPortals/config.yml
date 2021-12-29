@@ -9,4 +9,14 @@ portal-auto-link-when:
   end:
     prefix: ''
     suffix: _the_end
-worlds: {}
+worlds:
+  lantern:
+    portalgoesto:
+      ENDER: lantern_the_end
+      NETHER: lantern_nether
+  lantern_the_end:
+    portalgoesto:
+      ENDER: lantern
+  lantern_nether:
+    portalgoesto:
+      NETHER: lantern
