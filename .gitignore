@@ -84,3 +84,6 @@ plugins/Essentials/usermap.csv
 
 # ProtocolLib
 plugins/ProtocolLib/lastupdate
+
+# PlaceholderAPI
+plugins/PlaceholderAPI/javascripts/javascript_data/

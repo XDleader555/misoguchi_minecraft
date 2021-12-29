@@ -5,12 +5,14 @@ header-footer:
   disable-in-worlds:
     - disabledworld
   header:
-    - "&3Misoguchi Gaming"
-    - "&7Online players: &f%online%"
+    - "&r&3==------== &bMisoguchi Gaming &3==------==&r"
+    - "&rRam: %math_2:_{server_ram_used}/1024%/%math_2:_{server_ram_max}/1024% GB"
+    - "&r%ping% ms / %tps% tps"
   footer:
-    - "%animation:time%"
-    - "%animation:ping-tps%"
-    - "&7 Used memory: %memory-used% MB / %memory-max% MB"
+    - "&r%player_biome_capitalized%"
+    - "&rx: %player_x% y: %player_y% z: %player_z%"
+    - "&rVelocity: %math_2:_{javascript_velocity}% m/s"
+    - "&r&3==-------------------------------=="
   per-world:
     world1:
       header:
@@ -58,7 +60,7 @@ scoreboard-teams:
 
 yellow-number-in-tablist:
   enabled: true
-  value: "%ping%"
+  value: "%objective_score_deaths%"
   disable-in-worlds:
     - disabledworld
 
@@ -165,7 +167,7 @@ placeholder-output-replacements:
     "yes": "&7| Vanished"
     "no": ""
   "%afk%":
-    true: " &o[AFK]&r"
+    true: "&7"
     false: ""
   "%essentials_nickname%":
     "%essentials_nickname%": "%player%" #placeholder did not parse correctly, show real name instead
