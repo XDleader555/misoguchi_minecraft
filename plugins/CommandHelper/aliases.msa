@@ -45,4 +45,12 @@ settitle:/settitle [$title] = >>>
 	msg("Your title has been set to \"".$title."\"")
 <<<
 
-settitle:/resettitle = call_alias('/settitle &1[&9Player&1]&f')
+settitle:/resettitle = >>>
+	# Make sure the caller has permission to run this command
+	if(!has_permission('commandhelper.alias.settitle')) {
+		die(color('dark_red')."You do not have access to that command.");
+	}
+
+	runas('~console', /lp user player() meta removesuffix 2);
+	msg("Your title has been reset")
+<<<
