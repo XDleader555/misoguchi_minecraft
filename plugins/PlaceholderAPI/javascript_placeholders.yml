@@ -23,5 +23,7 @@
 #   file: 'my_placeholder.js'
 velocity:
   file: velocity.js
+moonphase:
+  file: moonphase.js
 example:
   file: example.js

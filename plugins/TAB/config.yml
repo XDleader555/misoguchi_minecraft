@@ -10,6 +10,7 @@ header-footer:
     - "&r%ping% ms / %tps% tps"
   footer:
     - "&r%player_biome_capitalized%"
+    - "%javascript_moonphase%"
     - "&rx: %player_x% y: %player_y% z: %player_z%"
     - "&rVelocity: %math_2:_{javascript_velocity}% m/s"
     - "&r&3==-------------------------------=="
