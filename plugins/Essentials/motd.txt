@@ -1,6 +1,7 @@
 &4==-------------------------------------------------==&f
 &rWelcome back &6{PLAYER}&r!
 &rIt is currently &6{WORLDTIME12}&r in &6{WORLD}
+&rReminder to &nonly whitelist people you know!
 &rCommand list is on our website &3&nhttps://misoguchi.com/
 &rJoin the &ddiscord! &3&nhttps://discord.gg/S22c4mb
 &4==-------------------------------------------------==&f
