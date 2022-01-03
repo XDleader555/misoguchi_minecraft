@@ -51,6 +51,24 @@ blocks:
     light-level: 15
     count-on-destroy: true
     priority: 90
+  ANCIENT_DEBRIS:
+    enabled: true
+    variants:
+    display-name: "Ancient Debris"
+    display-color: "dark_red"
+    alerts:
+      user: true
+      admin: true
+    name:
+      singular: ancient debris
+      plural: ancient debris
+    count:
+      number: 20
+      time: 600
+    sound: ENTITY_PLAYER_LEVELUP
+    light-level: 15
+    count-on-destroy: true
+    priority: 100
 
 dont-edit-this:
   version: 1
