@@ -42,7 +42,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '3460960440433565221'
+    seed: '3499308549'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -89,7 +89,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '3460960440433565221'
+    seed: '3499308549'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -121,22 +121,22 @@ worlds:
       amount: '0.0'
     hunger: 'true'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: SURVIVAL
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -128.0
-      y: 69.0
-      z: -208.0
-      pitch: 0.0
-      yaw: 0.0
+      x: 1000.5
+      y: 67.0
+      z: -666.5
+      pitch: -9.9000225
+      yaw: 4.8000054
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '3460960440433565221'
+    seed: '3499308549'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'

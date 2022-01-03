@@ -5,8 +5,8 @@
 groups:
   default:
     worlds:
-    - world
-    - world_the_end
-    - world_nether
+    - lantern
+    - lantern_the_end
+    - lantern_nether
     shares:
     - all
