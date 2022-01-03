@@ -38,3 +38,14 @@ expansions:
       medium: '&e'
       high: '&c'
       low: '&a'
+  vault:
+    baltop:
+      check_delay: 30
+      cache_size: 100
+      enabled: false
+    formatting:
+      thousands: k
+      trillions: T
+      quadrillions: Q
+      billions: B
+      millions: M

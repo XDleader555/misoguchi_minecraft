@@ -5,15 +5,18 @@ header-footer:
   disable-in-worlds:
     - disabledworld
   header:
-    - "&r&3==------== &bMisoguchi Gaming &3==------==&r"
-    - "&rRam: %math_2:_{server_ram_used}/1024%/%math_2:_{server_ram_max}/1024% GB"
-    - "&r%ping% ms / %tps% tps"
+    - "&3==--------== &bMisoguchi Gaming &3==--------==&r"
+    - "Time: %player_world_time_24%"
+    - "Biome: %player_biome_capitalized% / %javascript_moonphase%"
+    - "Ping: %ping% ms / Ram: %math_2:_{server_ram_used}/1024%/%math_2:_{server_ram_max}/1024% GB"
+    - ""
   footer:
-    - "&r%player_biome_capitalized%"
-    - "%javascript_moonphase%"
-    - "&rx: %player_x% y: %player_y% z: %player_z%"
-    - "&rVelocity: %math_2:_{javascript_velocity}% m/s"
-    - "&r&3==-------------------------------=="
+    - ""
+    - "Player Speed: %math_2:_{javascript_velocity}% m/s"
+    - "Balance: %vault_eco_balance_formatted% Diamonds"
+    - "x: %player_x% y: %player_y% z: %player_z%"
+    - "Playtime: %math_1:_{statistic_minutes_played}/60% Hours"
+    - "&3==-----------------------------------=="
   per-world:
     world1:
       header:
@@ -27,7 +30,7 @@ header-footer:
 
 tablist-name-formatting:
   enabled: true
-  align-tabsuffix-on-the-right: false
+  align-tabsuffix-on-the-right: true
   character-width-overrides: {}
   anti-override: true
   disable-in-worlds:
@@ -60,8 +63,8 @@ scoreboard-teams:
       myCustomLine: 0.66
 
 yellow-number-in-tablist:
-  enabled: true
-  value: "%objective_score_deaths%"
+  enabled: false
+  value: "%objective_score_Deaths%"
   disable-in-worlds:
     - disabledworld
 

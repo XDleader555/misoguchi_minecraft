@@ -1,5 +1,5 @@
 var player = BukkitPlayer;
-var key = "%player_velocity%.pos"
+var key = player.getName() + ".%player_velocity%.pos"
 
 function velocity() {
   var newPos = {
@@ -17,7 +17,13 @@ function velocity() {
   dz = newPos.z - oldPos.z;
   dt = newPos.t - oldPos.t;
 
-  return Math.sqrt(dx*dx + dy*dy + dz*dz) / dt * 1000
+  var dv = Math.sqrt(dx*dx + dy*dy + dz*dz) / dt * 1000
+  
+  if(isNaN(dv)) {
+    return 0;
+  }
+
+  return dv;
 }
 
 velocity();

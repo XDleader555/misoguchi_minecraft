@@ -13,7 +13,7 @@ phases = [
 
 function moonphase() {
   slimeChunk = player.getLocation().getChunk().isSlimeChunk()
-  return phases[Math.floor(player.getWorld().getFullTime()/24000%8)] + (slimeChunk ? "&2" : "&f") + " ☽&f"
+  return (slimeChunk ? "&2" : "&f") + "☽&f " + phases[Math.floor(player.getWorld().getFullTime()/24000%8)]
 }
 
 moonphase();
