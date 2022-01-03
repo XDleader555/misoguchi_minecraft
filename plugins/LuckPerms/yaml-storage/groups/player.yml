@@ -8,13 +8,14 @@ permissions:
 - worldguard.build.*
 - angelchest.fetch
 - angelchest.use
+- chestsort.use
+- chestsort.use.inventory
 - commandbook.away
 - commandbook.motd
 - commandbook.msg
 - commandbook.ping
 - commandbook.say
 - commandbook.say.me
-- commandbook.spawn
 - commandbook.time.check
 - commandbook.warp.list
 - commandbook.whereami
@@ -39,6 +40,7 @@ permissions:
 - essentials.clearinventory
 - essentials.list
 - essentials.motd
+- essentials.ping
 - essentials.suicide
 - lpc.colorcodes
 - lpc.rgbcodes
@@ -50,24 +52,9 @@ permissions:
 - multiverse.core.info
 - multiverse.info
 - simplebackup.use
-- simplesort.chest
-- simplesort.inventory
 - worldedit.navigation.unstuck
 parents:
 - default
-prefixes:
-- '&1[&7E&1]':
-    priority: 1
-    context:
-      world: world_the_end
-- '&1[&cN&1]':
-    priority: 1
-    context:
-      world: world_nether
-- '&1[&aW&1]':
-    priority: 1
-    context:
-      world: world
 suffixes:
 - '&1[&9Player&1]&f':
     priority: 1
