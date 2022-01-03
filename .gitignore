@@ -66,6 +66,7 @@ plugins/WorldGuard/worlds/
 
 # TAB
 plugins/TAB/errors.log
+plugins/TAB/placeholder-errors.log
 plugins/PlaceholderAPI/expansions/
 
 # Gringotts
@@ -81,9 +82,15 @@ plugins/Essentials/userdata/
 plugins/Essentials/userdata-npc-backup/
 plugins/Essentials/warps/
 plugins/Essentials/usermap.csv
+plugins/Essentials/spawn.yml
 
 # ProtocolLib
 plugins/ProtocolLib/lastupdate
 
 # PlaceholderAPI
 plugins/PlaceholderAPI/javascripts/javascript_data/
+
+# Dynmap
+plugins/dynmap/ids-by-ip.txt
+plugins/dynmap/*.pending
+plugins/dynmap/web
