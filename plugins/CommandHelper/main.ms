@@ -10,19 +10,46 @@
 ######################################################
 
 @server_name = 'MisoguchiMC';
+@whitelist_permission = 'essentials.motd';
 
 # Echo out a server greeting to the console
 # console('Welcome to this server, which is running CommandHelper! (Change this message in plugins/CommandHelper/main.ms)');
 
 # Bind an event to the player join, and tell ops hello.
 # We send in @server_name, so we can use it inside the event handler
-bind('player_join', null, null, @event, @server_name) {
+bind('player_join', null, null, @event, @server_name, @whitelist_permission) {
 	# Check if the player has build permissions
-	if(!has_permission($player, 'commandhelper.motd')) {
+	if(!has_permission(player(), @whitelist_permission)) {
 		msg(color('DARK_RED').'==-------------------------------------------------==');
 		msg(color('PLAIN_WHITE').'Welcome '.color('GOLD').player());
 		msg(color('PLAIN_WHITE').'You are currently '.color('RED').color('BOLD').'NOT WHITELISTED');
 		msg(color('PLAIN_WHITE').'Your actions will be limited until you are whitelisted');
 		die(color('DARK_RED').'==-------------------------------------------------==');
+	}
+}
+
+# afk players who enter a bed
+bind('player_enter_bed', null, null, @event) {
+	if(@event['result'] == 'OK') {
+		runas(player(), /afk);
+		msg("yeet");
+	}
+}
+
+# Prevent guests from dealing damage
+bind('entity_damage', null, array(cause: 'ENTITY_ATTACK', 'PROJECTILE'), @event, @whitelist_permission) {
+	if(length(@event['damager']) <= 16) {
+		if(!has_permission(@event['damager'], @whitelist_permission)) {
+			cancel(@event);
+			msg(color('DARK_RED').'You are not permitted to deal damage.');
+		}
+	}
+}
+
+bind('player_chat', null, null, @event) {
+	if(string_contains_ic(@event['message'], 'frick')) {
+		cancel(@event);
+		pkick(player(), "This is a Christian minecraft server!");
+		runas('~console', '/say '.player().' has been kicked for saying the unthinkable');
 	}
 }

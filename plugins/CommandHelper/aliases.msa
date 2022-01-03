@@ -15,18 +15,23 @@ whitelist:/whitelist [$player] = >>>
 		die(color('dark_red')."You do not have access to that command.");
 	}
 
-	# Check if the player is already whitelisted
-	try {
-		if(has_permission($player, 'essentials.build')) {
-			die($player." is already whitelisted!");
-		}
-	} catch(PlayerOfflineException @e) {
-		# If the player's offline, we can't check their permissions
-		#die("\"".$player."\" must be online to whitelist!");
-	}
+	// # Check if the player is already whitelisted
+	// try {
+	// 	if(has_permission($player, 'essentials.build')) {
+	// 		die($player." is already whitelisted!");
+	// 	}
+	// } catch(PlayerOfflineException @e) {
+	// 	# If the player's offline, we can't check their permissions
+	// 	#die("\"".$player."\" must be online to whitelist!");
+	// }
 	
+	// reflect
+
+	// @ret = capture_runas('~console', /lp user $player info)
+	// msg(@ret)
+
 	# Whitelist the player
-	/lp user $player promote playertrack
+	runas(player(), /lp user $player promote playertrack)
 	runas('~console', /say player() whitelisted $player);
 <<<
 
