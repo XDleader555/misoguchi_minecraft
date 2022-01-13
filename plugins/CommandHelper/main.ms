@@ -36,6 +36,20 @@ bind('player_enter_bed', null, null, @event) {
 	}
 }
 
+# Protect certain entitites
+bind('entity_damage', null, null, @event) {
+	if(@event['id'] == 'c88f325e-4dc9-48fe-904b-1f2552503d4f') {
+		#cancel(@event);
+		# Use the following for protection instead: /data merge entity UUID {Invulnerable: 1}
+
+		# Send a message to the player who hit the entitiy
+		if(length(@event['damager']) <= 16) {
+			tmsg(@event['damager'], '&9Immortal Object.');
+		}
+	}
+}
+
+
 # Prevent guests from dealing damage
 bind('entity_damage', null, array(cause: 'ENTITY_ATTACK', 'PROJECTILE'), @event, @whitelist_permission) {
 	if(length(@event['damager']) <= 16) {
@@ -53,3 +67,7 @@ bind('player_chat', null, null, @event) {
 		runas('~console', '/say '.player().' has been kicked for saying the unthinkable');
 	}
 }
+
+// bind('player_interact_at_entity', null, null, @event) {
+// 	console(@event);
+// }

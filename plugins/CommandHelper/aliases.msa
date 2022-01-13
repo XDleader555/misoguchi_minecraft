@@ -32,7 +32,7 @@ whitelist:/whitelist [$player] = >>>
 
 	# Whitelist the player
 	runas(player(), /lp user $player promote playertrack)
-	runas('~console', /say player() whitelisted $player);
+	runas('~console', "/say ".player()." whitelisted ".$player);
 <<<
 
 # Let players set their own title
@@ -46,7 +46,13 @@ settitle:/settitle [$title] = >>>
 		die(color('dark_red')."You do not have access to that command.");
 	}
 
-	runas('~console', /lp user player() meta setsuffix $title);
+
+	@plainstr = reg_replace('&[0-9a-f ]', '', $title)
+	if(length(@plainstr) > 32) {
+		die("Custom title must be 32 chracters or less.");
+	}
+
+	runas('~console', "/lp user ".player()." meta setsuffix ".reg_replace('[ ]', '', $title));
 	msg("Your title has been set to \"".$title."\"")
 <<<
 
@@ -56,6 +62,6 @@ settitle:/resettitle = >>>
 		die(color('dark_red')."You do not have access to that command.");
 	}
 
-	runas('~console', /lp user player() meta removesuffix 2);
+	runas('~console', "/lp user ".player()." meta removesuffix 2");
 	msg("Your title has been reset")
 <<<
