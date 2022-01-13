@@ -1,10 +1,10 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://discord.gg/papermc
 # IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
@@ -33,6 +33,7 @@ timings:
   server-name: Unknown Server
 config-version: 24
 settings:
+  time-command-affects-all-worlds: false
   send-full-pos-for-hard-colliding-entities: true
   max-joins-per-tick: 3
   player-auto-save-rate: -1
@@ -81,6 +82,7 @@ settings:
   lag-compensate-block-breaking: true
   suggest-player-names-when-null-tab-completions: true
   unsupported-settings:
+    perform-username-validation: true
     allow-permanent-block-break-exploits: false
     allow-piston-duplication: false
     allow-headless-pistons: false
@@ -106,6 +108,15 @@ settings:
         action: DROP
 world-settings:
   default:
+    slime-spawn-height:
+      swamp-biome:
+        maximum: 70.0
+        minimum: 50.0
+      slime-chunk:
+        maximum: 40.0
+    wateranimal-spawn-height:
+      maximum: default
+      minimum: default
     show-sign-click-command-failure-msgs-to-player: false
     armor-stands-tick: true
     nether-ceiling-void-damage-height: 0
