@@ -1,60 +1,13 @@
 worlds:
-  fensden:
+  mochiland_the_end:
     ==: MVWorld
     hidden: 'false'
-    alias: fensden
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: fensden
-    allowWeather: 'true'
-    difficulty: NORMAL
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: -64.0
-      y: 76.0
-      z: 288.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'true'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '2844669254634783120'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'true'
-  fensden_the_end:
-    ==: MVWorld
-    hidden: 'false'
-    alias: fensden_the_end
+    alias: mochiland_the_end
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '16.0'
-    respawnWorld: fensden
+    respawnWorld: mochiland
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -93,15 +46,15 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  fensden_nether:
+  mochiland_nether:
     ==: MVWorld
     hidden: 'false'
-    alias: fensden_nether
+    alias: mochiland_nether
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: fensden
+    respawnWorld: mochiland
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -136,6 +89,53 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
+    seed: '2844669254634783120'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'true'
+  mochiland:
+    ==: MVWorld
+    hidden: 'false'
+    alias: mochiland
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: mochiland
+    allowWeather: 'true'
+    difficulty: NORMAL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -64.0
+      y: 76.0
+      z: 288.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
     seed: '2844669254634783120'
     generator: 'null'
     playerLimit: '-1'

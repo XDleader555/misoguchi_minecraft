@@ -1,14 +1,12 @@
 # Multiverse-Inventories Groups
 
-
-
-# To ADD, DELETE, and EDIT groups use the command /mvinv group.
-# No support will be given for those who manually edit these groups.
 # To ADD, DELETE, and EDIT groups use the command /mvinv group.
 # No support will be given for those who manually edit these groups.
 groups:
-  fensden:
+  default:
     worlds:
-    - fensden
-    - fensden_nether
-    - fensden_the_end
+    - mochiland_the_end
+    - mochiland_nether
+    - mochiland
+    shares:
+    - all

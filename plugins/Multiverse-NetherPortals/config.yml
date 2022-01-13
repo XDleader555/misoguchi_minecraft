@@ -10,23 +10,13 @@ portal-auto-link-when:
     prefix: ''
     suffix: _the_end
 worlds:
-  lantern:
+  mochiland:
     portalgoesto:
-      ENDER: lantern_the_end
-      NETHER: lantern_nether
-  lantern_the_end:
+      NETHER: mochiland_nether
+      ENDER: mochiland_the_end
+  mochiland_nether:
     portalgoesto:
-      ENDER: lantern
-  lantern_nether:
+      NETHER: mochiland
+  mochiland_the_end:
     portalgoesto:
-      NETHER: lantern
-  fensden:
-    portalgoesto:
-      NETHER: fensden_nether
-      ENDER: fensden_the_end
-  fensden_nether:
-    portalgoesto:
-      NETHER: fensden
-  fensden_the_end:
-    portalgoesto:
-      ENDER: fensden
+      ENDER: mochiland

@@ -20,6 +20,9 @@ lantern_the_end/
 fensden/
 fensden_nether/
 fensden_the_end/
+mochiland/
+mochiland_nether/
+mochiland_the_end/
 
 # Plugin jars
 plugins/*.jar
