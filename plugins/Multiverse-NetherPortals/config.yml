@@ -20,3 +20,13 @@ worlds:
   lantern_nether:
     portalgoesto:
       NETHER: lantern
+  fensden:
+    portalgoesto:
+      NETHER: fensden_nether
+      ENDER: fensden_the_end
+  fensden_nether:
+    portalgoesto:
+      NETHER: fensden
+  fensden_the_end:
+    portalgoesto:
+      ENDER: fensden

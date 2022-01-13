@@ -17,7 +17,9 @@ world_the_end/
 lantern/
 lantern_nether/
 lantern_the_end/
-
+fensden/
+fensden_nether/
+fensden_the_end/
 
 # Plugin jars
 plugins/*.jar
@@ -38,7 +40,7 @@ plugins/CommandBook/spawns.yml
 plugins/CommandBook/sessions/
 
 # Craftbook
-plugins/Craftbook/uuid-mappings.db
+plugins/CraftBook/uuid-mappings.db
 
 # LuckPerms
 plugins/LuckPerms/yaml-storage/users/

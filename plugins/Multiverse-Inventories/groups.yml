@@ -7,10 +7,8 @@
 # To ADD, DELETE, and EDIT groups use the command /mvinv group.
 # No support will be given for those who manually edit these groups.
 groups:
-  default:
+  fensden:
     worlds:
-    - lantern
-    - lantern_the_end
-    - lantern_nether
-    shares:
-    - all
+    - fensden
+    - fensden_nether
+    - fensden_the_end

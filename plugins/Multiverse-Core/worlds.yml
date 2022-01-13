@@ -1,13 +1,60 @@
 worlds:
-  lantern_the_end:
+  fensden:
     ==: MVWorld
     hidden: 'false'
-    alias: lantern_the_end
+    alias: fensden
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: fensden
+    allowWeather: 'true'
+    difficulty: NORMAL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -64.0
+      y: 76.0
+      z: 288.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '2844669254634783120'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'true'
+  fensden_the_end:
+    ==: MVWorld
+    hidden: 'false'
+    alias: fensden_the_end
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '16.0'
-    respawnWorld: lantern
+    respawnWorld: fensden
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -34,7 +81,7 @@ worlds:
     spawnLocation:
       ==: MVSpawnLocation
       x: 0.0
-      y: 64.0
+      y: 60.0
       z: 0.0
       pitch: 0.0
       yaw: 0.0
@@ -42,19 +89,19 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '3499308549'
+    seed: '2844669254634783120'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  lantern_nether:
+  fensden_nether:
     ==: MVWorld
     hidden: 'false'
-    alias: lantern_nether
+    alias: fensden_nether
     color: WHITE
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: lantern
+    respawnWorld: fensden
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -80,63 +127,16 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -5.5
+      x: 4.5
       y: 66.0
-      z: 5.5
+      z: 4.5
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '3499308549'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'true'
-  lantern:
-    ==: MVWorld
-    hidden: 'false'
-    alias: lantern
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: lantern
-    allowWeather: 'true'
-    difficulty: NORMAL
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'false'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 1000.5
-      y: 67.0
-      z: -666.5
-      pitch: -9.9000225
-      yaw: 4.8000054
-    autoLoad: 'true'
-    bedRespawn: 'true'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '3499308549'
+    seed: '2844669254634783120'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
